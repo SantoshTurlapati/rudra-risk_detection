@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 from app.core.config import settings
 
 database_url = make_url(settings.DATABASE_URL)
-if database_url.drivername == "postgresql":
+if database_url.get_backend_name() == "postgresql":
     database_url = database_url.set(drivername="postgresql+psycopg2")
 if database_url.get_backend_name() == "sqlite" and database_url.database not in (None, "", ":memory:"):
     Path(database_url.database).expanduser().resolve().parent.mkdir(parents=True, exist_ok=True)
