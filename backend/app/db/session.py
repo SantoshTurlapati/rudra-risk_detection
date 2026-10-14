@@ -16,7 +16,7 @@ if database_url.get_backend_name() == "sqlite":
     connect_args = {"check_same_thread": False}
 
 engine = create_engine(
-    settings.DATABASE_URL,
+    database_url,
     connect_args=connect_args,
     pool_pre_ping=True
 )
