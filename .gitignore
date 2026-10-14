@@ -1,0 +1,55 @@
+/rudrashield.db
+/rudrashield.db.backup-*
+/rudrashield.db-*
+/backend/data/*.db
+/backend/data/*.db-*
+/frontend/dist/
+
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+credentials.json
+
+# Local databases, sidecars, and backups
+**/*.db
+**/*.db-*
+**/*.sqlite
+**/*.sqlite-*
+**/*.sqlite3
+**/*.sqlite3-*
+backup-pre-fix/
+**/backup-pre-fix/
+backups/
+**/backups/
+*.backup
+*.backup-*
+*.bak
+*.bak-*
+
+# Private uploads, logs, and generated artifacts
+uploads/
+**/uploads/
+logs/
+**/logs/
+*.log
+
+# Local Python and JavaScript environments/caches
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/node_modules/
+
+# Exclude personal WhatsApp images from the public repository
+/WhatsApp Image 2026-10-13 at 3.44.49 PM.jpeg
+/WhatsApp Image 2026-10-13 at 5.42.02 PM.jpeg
+
+# Exclude historical audit backups
+/backend/ai-audit-backup/
