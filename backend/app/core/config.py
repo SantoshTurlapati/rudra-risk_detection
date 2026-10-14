@@ -25,12 +25,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./rudrashield.db")
 
     # CORS Origins
-    BACKEND_CORS_ORIGINS: List[str] = [
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:3000",
-        "http://localhost:8000",
-    ]
+    BACKEND_CORS_ORIGINS: List[str] = ["https://rudrashield-frontend.onrender.com","http://localhost:5173","http://127.0.0.1:5173","http://localhost:3000","http://localhost:8000"]
 
     # Upload storage directory
     UPLOAD_DIR: str = os.getenv("UPLOAD_DIR", "uploads")
