@@ -1,5 +1,5 @@
 # RudraShield AI
-
+LINK:-https://rudrashield-frontend.onrender.com/dashboard
 > **"Detect Deception. Expose Threats. Protect Digital Trust."**
 
 RudraShield AI is a digital-risk-protection application for organization administrators, analysts, and people reviewing potentially deceptive URLs, profiles, messages, and mobile-app metadata. It provides manual, evidence-oriented workflows using local heuristic analysis of submitted information. Live social-platform and app-store discovery and continuous monitoring are unavailable.
